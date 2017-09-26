@@ -1,10 +1,9 @@
 package ca.beogotechnologies.model;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
+@Entity
+@Table(name = "Organizer")
 public class Organizer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
